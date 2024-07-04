@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" disabled>
-        <div class="buttons">
+    <h1 class="main">Simple Calculator</h1>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
             <!-- Arithmetic operation buttons -->
             <button class="btn" onclick="appendToDisplay('1')">1</button>
             <button class="btn" onclick="appendToDisplay('2')">2</button>
@@ -26,15 +28,19 @@
             <button class="btn" onclick="appendToDisplay('9')">9</button>
             <button class="btn" onclick="performOperation('*')">*</button>
             <!--  -->
-            <button class="btn" > </button>
+            <button class="btn" disabled> </button>
             <button class="btn" onclick="appendToDisplay('0')">0</button>
-            <button class="btn" >3</button>
+            <button class="btn" disabled> </button>
             <button class="btn" onclick="performOperation('/')">/</button>
             
-            <button class="btn" onclick="calculateBMI()">BMI</button>
             <button class="btn" onclick="clearDisplay()">C</button>
+            <button class="btn" disabled> </button>
+            <button class="btn" disabled> </button>
             <button class="btn" onclick="computeResult()">=</button>
+            </div>
         </div>
+        <button class="btn bmi" onclick="calculateBMI()">Calculate BMI</button>
+        <button class="btn bmi" onclick="changeMode()"><img src="./icons/moon-icon.png" id="img"></button>
     </div>
     <script src="script.js"></script>
 </body>
