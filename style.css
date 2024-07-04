@@ -37,6 +37,7 @@ body {
     text-align: right;
     margin-bottom: 10px;
     border-radius: 10px;
+    background-color: buttonface;
 }
 
 .buttons {
@@ -87,12 +88,4 @@ body {
 
 .dark-mode .btn:hover:not(:disabled) {
     background-color: #4C4C4C;
-}
-
-.dark-mode .primary-text {
-    color: #FFFFFF;
-}
-
-.dark-mode .accent-color {
-    color: #4C4C4C;
 }
