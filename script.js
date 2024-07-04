@@ -65,3 +65,17 @@ function calculateBMI() {
         display.value = 'Error';
     }
 }
+
+function changeMode() {
+    document.body.classList.toggle('dark-mode')
+    let mode = document.body.classList.contains("dark-mode")
+    console.log(mode);
+    switch (mode) {
+        case false:
+            document.getElementById('img').setAttribute("src", "./icons/moon-icon.png")
+            break;
+        default:
+            document.getElementById('img').setAttribute("src", "./icons/light-icon.png")
+            return;
+    }
+}
