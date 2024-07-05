@@ -1,5 +1,5 @@
              #The Simple JS Calculator
-This is a simple calculator done as a project task
+This is a simple calculator done as a project task.
 
 <p>The calculator performs basic arithmetic and includes a BMI calculator. JavaScript handles user input, manages an operations queue, and computes results. The BMI feature validates height and weight inputs to prevent errors.<p>
 
